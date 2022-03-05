@@ -1,0 +1,50 @@
+.container {
+    padding: 10px 15px;
+    margin: 10px 15px;
+    background-color: rgb(191, 198, 204);
+    border-radius: 10px;
+    width: 270px;
+    box-shadow: 3px 3px 5px rgba(17, 17, 17, 0.15);
+}
+
+.container img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+    height: 270px;
+}
+
+.container h2, h4 {
+    margin-left: 15px;
+}
+
+.container p {
+    background-color: rgba(22, 110, 22, 0.589);
+    width: 100px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.counterDiv {
+    display: flex;
+    align-items: center;
+}
+
+.counterDiv img {
+    width: 20px;
+    height: 20px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.counterDiv span {
+    background-color: rgb(127, 172, 255);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.deactive {
+    opacity: 0.4;
+}

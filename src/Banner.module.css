@@ -1,0 +1,20 @@
+.Banner {
+    position: relative;
+}
+
+
+.Banner img {
+    width: 100%;
+    height: 90vh;
+}
+
+.Banner .header {
+    position: absolute;
+    top: 150px;
+    left: 200px;
+    text-align: center;
+}
+
+.header p {
+    font-weight: bold;
+}
