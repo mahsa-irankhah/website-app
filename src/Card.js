@@ -16,7 +16,7 @@ const Card = (props) => {
             src={down}
             alt="down arrow"
             onClick={() => {if (counter>=1) {setCounter(counter - 1)}}}
-            className={!counter && styles.deactive}
+            className={!counter ? styles.deactive : null}
           />
           <span>{counter}</span>
           <img
