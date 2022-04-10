@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-
+import { Link } from 'react-router-dom';
+ 
 
 const NavList = styled.ul`
   display: flex;
@@ -13,7 +14,13 @@ const NavList = styled.ul`
     padding: 10px 20px;
     font-weight: bold;
   }
-  li:hover {
+
+  a {
+    text-decoration: none;
+    color: gray;
+  }
+  
+  li a:hover {
     color: #eef1ef;
   }
   @media (max-width: 768px) {
@@ -35,11 +42,22 @@ const NavList = styled.ul`
 `;
 
 const navbar = ({open}) => {
-    return (<NavList open={open} >
-        <li>Home</li>
-        <li>Products</li>
-        <li>About Us</li>
-    </NavList>);
+    return (
+      <NavList open={open}>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/products">Products</Link>
+        </li>
+        <li>
+          <Link to="/">About Us</Link>
+        </li>
+        <li>
+          <Link to="/register">Sign Up</Link>
+        </li>
+      </NavList>
+    );
 };
 
 export default navbar;
